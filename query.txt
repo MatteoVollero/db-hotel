@@ -38,3 +38,11 @@
 
 
 6) Qual è il prezzo massimo pagato?
+
+
+		SELECT MAX(`price`) 
+		AS PREZZO_MASSIMO 
+		FROM `pagamenti` ;
+
+
+7)
