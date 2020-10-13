@@ -15,9 +15,26 @@
 
 3) Seleziona tutti gli ospiti che hanno più di 20 anni: 
 
+
 		SELECT * 
 		FROM `ospiti` 
 		WHERE `date_of_birth` < '2000-01-01 00:00:01';
 
 
-4)
+4) Seleziona tutti gli ospiti il cui nome inizia con la D:
+
+
+		SELECT * 
+		FROM `ospiti` 
+		WHERE `name` LIKE 'D%';
+
+
+5) Calcola il totale degli ordini accepted:
+
+
+		SELECT COUNT(*) AS ACCEPTED 
+		FROM `pagamenti` 
+		WHERE `status` = 'accepted';
+
+
+6) Qual è il prezzo massimo pagato?
