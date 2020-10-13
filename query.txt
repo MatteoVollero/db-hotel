@@ -45,4 +45,16 @@
 		FROM `pagamenti` ;
 
 
-7)
+7) Seleziona gli ospiti riconosciuti con patente e nati nel 1975:
+
+
+		SELECT * 
+		FROM `ospiti`
+		WHERE `date_of_birth` >= '1975-01-01' 
+		AND `date_of_birth` < '1976-01-01'
+		AND `document_type` = 'Driver License';
+
+Le due date di nascite messe con l'AND servono per dare un arco temporale di un anno.
+
+
+8)
