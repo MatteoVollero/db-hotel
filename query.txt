@@ -57,4 +57,16 @@
 Le due date di nascite messe con l'AND servono per dare un arco temporale di un anno.
 
 
-8)
+8) Quanti posti letto ha l’hotel in totale?:
+
+
+		SELECT SUM(`beds`) AS TOT_POSTI_HOTEL
+		FROM `stanze`;
+
+
+
+
+
+
+
+------------------------------------ FINE ------------------------------------
