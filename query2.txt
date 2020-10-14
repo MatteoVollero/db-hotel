@@ -6,3 +6,12 @@
 		GROUP BY `date_of_birth`;
 
 
+2) Somma i prezzi dei pagamenti raggruppandoli per status:
+
+
+		SELECT SUM(`price`) AS STATUS_PREZZI 
+		FROM `pagamenti`
+		GROUP BY `status`;
+
+
+3)
