@@ -9,9 +9,14 @@
 2) Somma i prezzi dei pagamenti raggruppandoli per status:
 
 
-		SELECT SUM(`price`) AS STATUS_PREZZI 
+		SELECT SUM(`price`) AS STATUS_PREZZI , `status`
 		FROM `pagamenti`
 		GROUP BY `status`;
 
 
-3)
+3) Conta quante volte è stata prenotata ogni stanza:
+
+
+		SELECT COUNT(*) AS TOT_PRENOTAZIONI, `stanza_id` 
+		FROM `prenotazioni` 
+		GROUP BY `stanza_id`;
