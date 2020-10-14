@@ -1,0 +1,8 @@
+1) Conta gli ospiti raggruppandoli per anno di nascita:
+
+
+		SELECT `date_of_birth`, COUNT(*) 
+		FROM `ospiti`
+		GROUP BY `date_of_birth`;
+
+
